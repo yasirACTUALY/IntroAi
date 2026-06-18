@@ -1,0 +1,839 @@
+[
+    {
+        "restaurant_name": "Napoli Kitchen",
+        "tag": "Italian",
+        "menu": [
+            {
+                "item": "Margherita Pizza",
+                "ingredients": [
+                    "Pizza dough",
+                    "Tomato sauce",
+                    "Mozzarella",
+                    "Basil",
+                    "Olive oil"
+                ]
+            },
+            {
+                "item": "Spaghetti Carbonara",
+                "ingredients": [
+                    "Spaghetti",
+                    "Eggs",
+                    "Pancetta",
+                    "Parmesan cheese",
+                    "Black pepper"
+                ]
+            },
+            {
+                "item": "Lasagna",
+                "ingredients": [
+                    "Pasta sheets",
+                    "Ground beef",
+                    "Ricotta",
+                    "Mozzarella",
+                    "Tomato sauce"
+                ]
+            },
+            {
+                "item": "Chicken Parmesan",
+                "ingredients": [
+                    "Chicken breast",
+                    "Breadcrumbs",
+                    "Parmesan",
+                    "Mozzarella",
+                    "Marinara sauce"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Roma Bistro",
+        "tag": "Italian",
+        "menu": [
+            {
+                "item": "Fettuccine Alfredo",
+                "ingredients": [
+                    "Fettuccine",
+                    "Butter",
+                    "Parmesan cheese",
+                    "Cream"
+                ]
+            },
+            {
+                "item": "Risotto Milanese",
+                "ingredients": [
+                    "Arborio rice",
+                    "Saffron",
+                    "Butter",
+                    "Parmesan",
+                    "Onion"
+                ]
+            },
+            {
+                "item": "Caprese Salad",
+                "ingredients": [
+                    "Tomato",
+                    "Mozzarella",
+                    "Basil",
+                    "Olive oil"
+                ]
+            },
+            {
+                "item": "Meatball Sub",
+                "ingredients": [
+                    "Italian bread",
+                    "Meatballs",
+                    "Marinara sauce",
+                    "Mozzarella"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Dragon Palace",
+        "tag": "Chinese",
+        "menu": [
+            {
+                "item": "Kung Pao Chicken",
+                "ingredients": [
+                    "Chicken",
+                    "Peanuts",
+                    "Chili peppers",
+                    "Soy sauce",
+                    "Garlic"
+                ]
+            },
+            {
+                "item": "Fried Rice",
+                "ingredients": [
+                    "Rice",
+                    "Eggs",
+                    "Peas",
+                    "Carrots",
+                    "Soy sauce"
+                ]
+            },
+            {
+                "item": "Beef and Broccoli",
+                "ingredients": [
+                    "Beef",
+                    "Broccoli",
+                    "Oyster sauce",
+                    "Garlic"
+                ]
+            },
+            {
+                "item": "Spring Rolls",
+                "ingredients": [
+                    "Cabbage",
+                    "Carrots",
+                    "Wrappers",
+                    "Garlic",
+                    "Ginger"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Golden Wok",
+        "tag": "Chinese",
+        "menu": [
+            {
+                "item": "Sweet and Sour Pork",
+                "ingredients": [
+                    "Pork",
+                    "Pineapple",
+                    "Bell peppers",
+                    "Vinegar",
+                    "Sugar"
+                ]
+            },
+            {
+                "item": "Mapo Tofu",
+                "ingredients": [
+                    "Tofu",
+                    "Ground pork",
+                    "Chili bean paste",
+                    "Garlic"
+                ]
+            },
+            {
+                "item": "Chow Mein",
+                "ingredients": [
+                    "Noodles",
+                    "Cabbage",
+                    "Carrots",
+                    "Soy sauce"
+                ]
+            },
+            {
+                "item": "Dumplings",
+                "ingredients": [
+                    "Ground pork",
+                    "Cabbage",
+                    "Ginger",
+                    "Wrappers"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Sakura Sushi",
+        "tag": "Japanese",
+        "menu": [
+            {
+                "item": "California Roll",
+                "ingredients": [
+                    "Rice",
+                    "Nori",
+                    "Crab",
+                    "Avocado",
+                    "Cucumber"
+                ]
+            },
+            {
+                "item": "Salmon Nigiri",
+                "ingredients": [
+                    "Rice",
+                    "Salmon",
+                    "Wasabi"
+                ]
+            },
+            {
+                "item": "Miso Soup",
+                "ingredients": [
+                    "Miso paste",
+                    "Tofu",
+                    "Seaweed",
+                    "Scallions"
+                ]
+            },
+            {
+                "item": "Tempura Shrimp",
+                "ingredients": [
+                    "Shrimp",
+                    "Flour",
+                    "Egg",
+                    "Vegetable oil"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Tokyo Table",
+        "tag": "Japanese",
+        "menu": [
+            {
+                "item": "Chicken Teriyaki",
+                "ingredients": [
+                    "Chicken",
+                    "Soy sauce",
+                    "Mirin",
+                    "Sugar"
+                ]
+            },
+            {
+                "item": "Ramen",
+                "ingredients": [
+                    "Noodles",
+                    "Broth",
+                    "Pork",
+                    "Egg",
+                    "Scallions"
+                ]
+            },
+            {
+                "item": "Yakisoba",
+                "ingredients": [
+                    "Noodles",
+                    "Cabbage",
+                    "Carrots",
+                    "Soy sauce"
+                ]
+            },
+            {
+                "item": "Tuna Roll",
+                "ingredients": [
+                    "Rice",
+                    "Nori",
+                    "Tuna"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Taco Fiesta",
+        "tag": "Mexican",
+        "menu": [
+            {
+                "item": "Beef Taco",
+                "ingredients": [
+                    "Tortilla",
+                    "Beef",
+                    "Lettuce",
+                    "Cheese",
+                    "Tomato"
+                ]
+            },
+            {
+                "item": "Chicken Quesadilla",
+                "ingredients": [
+                    "Tortilla",
+                    "Chicken",
+                    "Cheese",
+                    "Peppers"
+                ]
+            },
+            {
+                "item": "Guacamole",
+                "ingredients": [
+                    "Avocado",
+                    "Onion",
+                    "Lime",
+                    "Cilantro"
+                ]
+            },
+            {
+                "item": "Burrito",
+                "ingredients": [
+                    "Tortilla",
+                    "Rice",
+                    "Beans",
+                    "Beef",
+                    "Salsa"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Cantina Verde",
+        "tag": "Mexican",
+        "menu": [
+            {
+                "item": "Enchiladas",
+                "ingredients": [
+                    "Tortillas",
+                    "Chicken",
+                    "Cheese",
+                    "Enchilada sauce"
+                ]
+            },
+            {
+                "item": "Nachos",
+                "ingredients": [
+                    "Tortilla chips",
+                    "Cheese",
+                    "Jalapeños",
+                    "Beans"
+                ]
+            },
+            {
+                "item": "Street Corn",
+                "ingredients": [
+                    "Corn",
+                    "Mayonnaise",
+                    "Cotija cheese",
+                    "Chili powder"
+                ]
+            },
+            {
+                "item": "Carnitas Tacos",
+                "ingredients": [
+                    "Pork",
+                    "Tortilla",
+                    "Onion",
+                    "Cilantro"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Green Garden",
+        "tag": "Vegan",
+        "menu": [
+            {
+                "item": "Lentil Bowl",
+                "ingredients": [
+                    "Lentils",
+                    "Quinoa",
+                    "Spinach",
+                    "Carrots"
+                ]
+            },
+            {
+                "item": "Vegan Burger",
+                "ingredients": [
+                    "Plant-based patty",
+                    "Lettuce",
+                    "Tomato",
+                    "Bun"
+                ]
+            },
+            {
+                "item": "Chickpea Curry",
+                "ingredients": [
+                    "Chickpeas",
+                    "Coconut milk",
+                    "Curry powder"
+                ]
+            },
+            {
+                "item": "Tofu Stir Fry",
+                "ingredients": [
+                    "Tofu",
+                    "Broccoli",
+                    "Carrots",
+                    "Soy sauce"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Pure Plant Cafe",
+        "tag": "Vegan",
+        "menu": [
+            {
+                "item": "Black Bean Wrap",
+                "ingredients": [
+                    "Black beans",
+                    "Lettuce",
+                    "Tomato",
+                    "Tortilla"
+                ]
+            },
+            {
+                "item": "Vegan Pad Thai",
+                "ingredients": [
+                    "Rice noodles",
+                    "Tofu",
+                    "Peanuts",
+                    "Bean sprouts"
+                ]
+            },
+            {
+                "item": "Avocado Toast",
+                "ingredients": [
+                    "Bread",
+                    "Avocado",
+                    "Lemon",
+                    "Pepper"
+                ]
+            },
+            {
+                "item": "Quinoa Salad",
+                "ingredients": [
+                    "Quinoa",
+                    "Cucumber",
+                    "Tomato",
+                    "Parsley"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Sweet Haven",
+        "tag": "Dessert",
+        "menu": [
+            {
+                "item": "Chocolate Cake",
+                "ingredients": [
+                    "Flour",
+                    "Cocoa powder",
+                    "Eggs",
+                    "Sugar"
+                ]
+            },
+            {
+                "item": "Cheesecake",
+                "ingredients": [
+                    "Cream cheese",
+                    "Eggs",
+                    "Sugar",
+                    "Graham crackers"
+                ]
+            },
+            {
+                "item": "Brownie",
+                "ingredients": [
+                    "Cocoa powder",
+                    "Butter",
+                    "Sugar",
+                    "Flour"
+                ]
+            },
+            {
+                "item": "Ice Cream Sundae",
+                "ingredients": [
+                    "Ice cream",
+                    "Chocolate syrup",
+                    "Whipped cream"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Sugar Cloud",
+        "tag": "Dessert",
+        "menu": [
+            {
+                "item": "Apple Pie",
+                "ingredients": [
+                    "Apples",
+                    "Flour",
+                    "Butter",
+                    "Cinnamon"
+                ]
+            },
+            {
+                "item": "Tiramisu",
+                "ingredients": [
+                    "Mascarpone",
+                    "Coffee",
+                    "Ladyfingers",
+                    "Cocoa"
+                ]
+            },
+            {
+                "item": "Lemon Tart",
+                "ingredients": [
+                    "Lemon juice",
+                    "Eggs",
+                    "Sugar",
+                    "Pastry crust"
+                ]
+            },
+            {
+                "item": "Macarons",
+                "ingredients": [
+                    "Almond flour",
+                    "Egg whites",
+                    "Sugar"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Burger Barn",
+        "tag": "Burgers",
+        "menu": [
+            {
+                "item": "Classic Burger",
+                "ingredients": [
+                    "Beef patty",
+                    "Lettuce",
+                    "Tomato",
+                    "Bun"
+                ]
+            },
+            {
+                "item": "Bacon Burger",
+                "ingredients": [
+                    "Beef patty",
+                    "Bacon",
+                    "Cheese",
+                    "Bun"
+                ]
+            },
+            {
+                "item": "Mushroom Swiss Burger",
+                "ingredients": [
+                    "Beef patty",
+                    "Mushrooms",
+                    "Swiss cheese"
+                ]
+            },
+            {
+                "item": "BBQ Burger",
+                "ingredients": [
+                    "Beef patty",
+                    "BBQ sauce",
+                    "Onion rings",
+                    "Bun"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Grill House",
+        "tag": "Burgers",
+        "menu": [
+            {
+                "item": "Double Cheeseburger",
+                "ingredients": [
+                    "Beef patties",
+                    "Cheddar cheese",
+                    "Bun"
+                ]
+            },
+            {
+                "item": "Jalapeño Burger",
+                "ingredients": [
+                    "Beef patty",
+                    "Jalapeños",
+                    "Pepper jack cheese"
+                ]
+            },
+            {
+                "item": "Turkey Burger",
+                "ingredients": [
+                    "Turkey patty",
+                    "Lettuce",
+                    "Tomato"
+                ]
+            },
+            {
+                "item": "Veggie Burger",
+                "ingredients": [
+                    "Vegetable patty",
+                    "Lettuce",
+                    "Tomato",
+                    "Bun"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Ocean Catch",
+        "tag": "Seafood",
+        "menu": [
+            {
+                "item": "Grilled Salmon",
+                "ingredients": [
+                    "Salmon",
+                    "Lemon",
+                    "Garlic",
+                    "Olive oil"
+                ]
+            },
+            {
+                "item": "Fish Tacos",
+                "ingredients": [
+                    "White fish",
+                    "Tortilla",
+                    "Cabbage",
+                    "Lime"
+                ]
+            },
+            {
+                "item": "Shrimp Scampi",
+                "ingredients": [
+                    "Shrimp",
+                    "Garlic",
+                    "Butter",
+                    "Pasta"
+                ]
+            },
+            {
+                "item": "Crab Cakes",
+                "ingredients": [
+                    "Crab meat",
+                    "Breadcrumbs",
+                    "Egg"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Harbor Seafood",
+        "tag": "Seafood",
+        "menu": [
+            {
+                "item": "Lobster Roll",
+                "ingredients": [
+                    "Lobster",
+                    "Mayonnaise",
+                    "Roll"
+                ]
+            },
+            {
+                "item": "Clam Chowder",
+                "ingredients": [
+                    "Clams",
+                    "Potatoes",
+                    "Cream",
+                    "Celery"
+                ]
+            },
+            {
+                "item": "Fried Calamari",
+                "ingredients": [
+                    "Squid",
+                    "Flour",
+                    "Vegetable oil"
+                ]
+            },
+            {
+                "item": "Garlic Mussels",
+                "ingredients": [
+                    "Mussels",
+                    "Garlic",
+                    "Butter",
+                    "Parsley"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Morning Bliss",
+        "tag": "Breakfast",
+        "menu": [
+            {
+                "item": "Pancakes",
+                "ingredients": [
+                    "Flour",
+                    "Eggs",
+                    "Milk",
+                    "Maple syrup"
+                ]
+            },
+            {
+                "item": "Omelette",
+                "ingredients": [
+                    "Eggs",
+                    "Cheese",
+                    "Bell peppers"
+                ]
+            },
+            {
+                "item": "French Toast",
+                "ingredients": [
+                    "Bread",
+                    "Eggs",
+                    "Milk",
+                    "Cinnamon"
+                ]
+            },
+            {
+                "item": "Breakfast Burrito",
+                "ingredients": [
+                    "Tortilla",
+                    "Eggs",
+                    "Sausage",
+                    "Cheese"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Sunrise Cafe",
+        "tag": "Breakfast",
+        "menu": [
+            {
+                "item": "Eggs Benedict",
+                "ingredients": [
+                    "Eggs",
+                    "English muffin",
+                    "Ham",
+                    "Hollandaise"
+                ]
+            },
+            {
+                "item": "Waffles",
+                "ingredients": [
+                    "Flour",
+                    "Eggs",
+                    "Milk",
+                    "Butter"
+                ]
+            },
+            {
+                "item": "Avocado Breakfast Sandwich",
+                "ingredients": [
+                    "Bread",
+                    "Avocado",
+                    "Egg",
+                    "Tomato"
+                ]
+            },
+            {
+                "item": "Hash Browns",
+                "ingredients": [
+                    "Potatoes",
+                    "Oil",
+                    "Salt"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Spice Route",
+        "tag": "Indian",
+        "menu": [
+            {
+                "item": "Butter Chicken",
+                "ingredients": [
+                    "Chicken",
+                    "Tomato sauce",
+                    "Cream",
+                    "Butter"
+                ]
+            },
+            {
+                "item": "Chana Masala",
+                "ingredients": [
+                    "Chickpeas",
+                    "Tomatoes",
+                    "Onions",
+                    "Spices"
+                ]
+            },
+            {
+                "item": "Garlic Naan",
+                "ingredients": [
+                    "Flour",
+                    "Yeast",
+                    "Garlic",
+                    "Butter"
+                ]
+            },
+            {
+                "item": "Biryani",
+                "ingredients": [
+                    "Rice",
+                    "Chicken",
+                    "Saffron",
+                    "Spices"
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant_name": "Taj Express",
+        "tag": "Indian",
+        "menu": [
+            {
+                "item": "Palak Paneer",
+                "ingredients": [
+                    "Spinach",
+                    "Paneer",
+                    "Garlic"
+                ]
+            },
+            {
+                "item": "Tandoori Chicken",
+                "ingredients": [
+                    "Chicken",
+                    "Yogurt",
+                    "Spices"
+                ]
+            },
+            {
+                "item": "Dal Tadka",
+                "ingredients": [
+                    "Lentils",
+                    "Onions",
+                    "Garlic",
+                    "Spices"
+                ]
+            },
+            {
+                "item": "Vegetable Samosa",
+                "ingredients": [
+                    "Potatoes",
+                    "Peas",
+                    "Flour",
+                    "Spices"
+                ]
+            }
+        ]
+    }
+]
