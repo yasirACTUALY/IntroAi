@@ -80,7 +80,7 @@ def find_recipes_by_name( word):
         print(f"  - {row['recipe_title']}")
     # return result.loc[result['recipe_title'].astype(str).str.len().idxmin()]
     
-def get_ingridents_by_recipe_name( word):
+def get_ingredients_by_recipe_name( word):
     """Find all recipes that contain a word in their name."""
     if data is None:
         return None
@@ -92,6 +92,7 @@ def get_ingridents_by_recipe_name( word):
         print(f"Found 0 recipes containing '{word}'")
         return None
     print(f"Found {len(result)} recipes containing '{word}'")
+    return result;
     for idx, row in result.iterrows():
         print(f"  - {row['ingredients_canonical']}")
 

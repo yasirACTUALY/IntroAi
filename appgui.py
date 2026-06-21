@@ -24,8 +24,8 @@ combo_box.pack(pady=5);
 combo_box.set("Restaurant Name");
 combo_box.bind("<<ComboboxSelected>>", select);
 
-recentry = tk.Entry(root);
-recentry.pack();
+recEntry = tk.Entry(root);
+recEntry.pack();
 
 dietary_label = tk.Label(root, text="Dietary Restrictions (Leave Blank if None):");
 dietary_label.pack();
@@ -35,5 +35,18 @@ dietary_entry.pack();
 
 confirmbutton = tk.Button(root, text="Get Recommendations", width=25);
 confirmbutton.pack(pady=10);
+
+def recommend():
+    inputText = recEntry.get();
+    recBy = combo_box.get();
+    if(recBy == "Restaurant Name"):
+
+
+    if(recBy == "Cuisine Type"):
+
+    
+    if(recBy == "Flavor"):
+        
+
 
 root.mainloop();

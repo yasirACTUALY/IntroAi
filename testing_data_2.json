@@ -1,0 +1,362 @@
+﻿[
+    {
+        "restaurant_name":  "Napoli Kitchen",
+        "tag":  "Italian",
+        "menu":  [
+                     {
+                         "item":  "Margherita Pizza"
+                     },
+                     {
+                         "item":  "Spaghetti Carbonara"
+                     },
+                     {
+                         "item":  "Lasagna"
+                     },
+                     {
+                         "item":  "Chicken Parmesan"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Roma Bistro",
+        "tag":  "Italian",
+        "menu":  [
+                     {
+                         "item":  "Fettuccine Alfredo"
+                     },
+                     {
+                         "item":  "Risotto Milanese"
+                     },
+                     {
+                         "item":  "Caprese Salad"
+                     },
+                     {
+                         "item":  "Meatball Sub"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Dragon Palace",
+        "tag":  "Chinese",
+        "menu":  [
+                     {
+                         "item":  "Kung Pao Chicken"
+                     },
+                     {
+                         "item":  "Fried Rice"
+                     },
+                     {
+                         "item":  "Beef and Broccoli"
+                     },
+                     {
+                         "item":  "Spring Rolls"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Golden Wok",
+        "tag":  "Chinese",
+        "menu":  [
+                     {
+                         "item":  "Sweet and Sour Pork"
+                     },
+                     {
+                         "item":  "Mapo Tofu"
+                     },
+                     {
+                         "item":  "Chow Mein"
+                     },
+                     {
+                         "item":  "Dumplings"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Sakura Sushi",
+        "tag":  "Japanese",
+        "menu":  [
+                     {
+                         "item":  "California Roll"
+                     },
+                     {
+                         "item":  "Salmon Nigiri"
+                     },
+                     {
+                         "item":  "Miso Soup"
+                     },
+                     {
+                         "item":  "Tempura Shrimp"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Tokyo Table",
+        "tag":  "Japanese",
+        "menu":  [
+                     {
+                         "item":  "Chicken Teriyaki"
+                     },
+                     {
+                         "item":  "Ramen"
+                     },
+                     {
+                         "item":  "Yakisoba"
+                     },
+                     {
+                         "item":  "Tuna Roll"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Taco Fiesta",
+        "tag":  "Mexican",
+        "menu":  [
+                     {
+                         "item":  "Beef Taco"
+                     },
+                     {
+                         "item":  "Chicken Quesadilla"
+                     },
+                     {
+                         "item":  "Guacamole"
+                     },
+                     {
+                         "item":  "Burrito"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Cantina Verde",
+        "tag":  "Mexican",
+        "menu":  [
+                     {
+                         "item":  "Enchiladas"
+                     },
+                     {
+                         "item":  "Nachos"
+                     },
+                     {
+                         "item":  "Street Corn"
+                     },
+                     {
+                         "item":  "Carnitas Tacos"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Green Garden",
+        "tag":  "Vegan",
+        "menu":  [
+                     {
+                         "item":  "Lentil Bowl"
+                     },
+                     {
+                         "item":  "Vegan Burger"
+                     },
+                     {
+                         "item":  "Chickpea Curry"
+                     },
+                     {
+                         "item":  "Tofu Stir Fry"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Pure Plant Cafe",
+        "tag":  "Vegan",
+        "menu":  [
+                     {
+                         "item":  "Black Bean Wrap"
+                     },
+                     {
+                         "item":  "Vegan Pad Thai"
+                     },
+                     {
+                         "item":  "Avocado Toast"
+                     },
+                     {
+                         "item":  "Quinoa Salad"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Sweet Haven",
+        "tag":  "Dessert",
+        "menu":  [
+                     {
+                         "item":  "Chocolate Cake"
+                     },
+                     {
+                         "item":  "Cheesecake"
+                     },
+                     {
+                         "item":  "Brownie"
+                     },
+                     {
+                         "item":  "Ice Cream Sundae"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Sugar Cloud",
+        "tag":  "Dessert",
+        "menu":  [
+                     {
+                         "item":  "Apple Pie"
+                     },
+                     {
+                         "item":  "Tiramisu"
+                     },
+                     {
+                         "item":  "Lemon Tart"
+                     },
+                     {
+                         "item":  "Macarons"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Burger Barn",
+        "tag":  "Burgers",
+        "menu":  [
+                     {
+                         "item":  "Classic Burger"
+                     },
+                     {
+                         "item":  "Bacon Burger"
+                     },
+                     {
+                         "item":  "Mushroom Swiss Burger"
+                     },
+                     {
+                         "item":  "BBQ Burger"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Grill House",
+        "tag":  "Burgers",
+        "menu":  [
+                     {
+                         "item":  "Double Cheeseburger"
+                     },
+                     {
+                         "item":  "JalapeÃ±o Burger"
+                     },
+                     {
+                         "item":  "Turkey Burger"
+                     },
+                     {
+                         "item":  "Veggie Burger"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Ocean Catch",
+        "tag":  "Seafood",
+        "menu":  [
+                     {
+                         "item":  "Grilled Salmon"
+                     },
+                     {
+                         "item":  "Fish Tacos"
+                     },
+                     {
+                         "item":  "Shrimp Scampi"
+                     },
+                     {
+                         "item":  "Crab Cakes"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Harbor Seafood",
+        "tag":  "Seafood",
+        "menu":  [
+                     {
+                         "item":  "Lobster Roll"
+                     },
+                     {
+                         "item":  "Clam Chowder"
+                     },
+                     {
+                         "item":  "Fried Calamari"
+                     },
+                     {
+                         "item":  "Garlic Mussels"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Morning Bliss",
+        "tag":  "Breakfast",
+        "menu":  [
+                     {
+                         "item":  "Pancakes"
+                     },
+                     {
+                         "item":  "Omelette"
+                     },
+                     {
+                         "item":  "French Toast"
+                     },
+                     {
+                         "item":  "Breakfast Burrito"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Sunrise Cafe",
+        "tag":  "Breakfast",
+        "menu":  [
+                     {
+                         "item":  "Eggs Benedict"
+                     },
+                     {
+                         "item":  "Waffles"
+                     },
+                     {
+                         "item":  "Avocado Breakfast Sandwich"
+                     },
+                     {
+                         "item":  "Hash Browns"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Spice Route",
+        "tag":  "Indian",
+        "menu":  [
+                     {
+                         "item":  "Butter Chicken"
+                     },
+                     {
+                         "item":  "Chana Masala"
+                     },
+                     {
+                         "item":  "Garlic Naan"
+                     },
+                     {
+                         "item":  "Biryani"
+                     }
+                 ]
+    },
+    {
+        "restaurant_name":  "Taj Express",
+        "tag":  "Indian",
+        "menu":  [
+                     {
+                         "item":  "Palak Paneer"
+                     },
+                     {
+                         "item":  "Tandoori Chicken"
+                     },
+                     {
+                         "item":  "Dal Tadka"
+                     },
+                     {
+                         "item":  "Vegetable Samosa"
+                     }
+                 ]
+    }
+]
