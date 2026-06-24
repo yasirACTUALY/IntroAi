@@ -1,5 +1,9 @@
 import tkinter as tk
 from tkinter import ttk
+import prototype1_test
+import sys
+import os
+import numpy as np
 
 root = tk.Tk();
 root.title("Restaurant Recommender");
@@ -39,13 +43,41 @@ confirmbutton.pack(pady=10);
 def recommend():
     inputText = recEntry.get();
     recBy = combo_box.get();
+    test_data_path = 'testing_data_V1.0.json';
     if(recBy == "Restaurant Name"):
+        test_data_path = 'testing_data_V1.0.json'
+        if not os.path.exists(test_data_path):
+            print('Input file not found:', test_data_path, file=sys.stderr)
+            sys.exit(2)
+        data = prototype1_test.load_data(test_data_path);
+        restaurant_list = prototype1_test.restaurant_to_list(data);
+        restaurant_embeddings = []
+        restaurant_names = [];
+        inputEmbedding = [];
+        foundInput = False;
+
+        restaurant_list = prototype1_test.restaurant_to_list(data)
+        for restaurant in restaurant_list:
+
+            name = restaurant[0]
+            # Extract all embeddings (skipping the name and any None values)
+            embeddings = [emb for emb in restaurant[1:] if emb is not None and isinstance(emb, np.ndarray)]
+        
+            if embeddings:
+                avg_emb = np.mean(embeddings, axis=0)
+                if name == inputText:
+                    inputEmbedding.append(avg_emb)
+                    foundInput = True;
+                else:
+                    restaurant_embeddings.append(avg_emb)
+                    restaurant_names.append(name)
+
+        
+        
+        
 
 
-    if(recBy == "Cuisine Type"):
 
-    
-    if(recBy == "Flavor"):
         
 
 
