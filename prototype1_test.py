@@ -4,8 +4,22 @@ import os
 import sys
 from Model import model, get_embedding
 import numpy as np
-from sklearn.metrics.pairwise import cosine_similarity
 
+
+def cosine_similarity(X, Y=None):
+    if Y is None:
+        Y = X
+
+    X = np.asarray(X)
+    Y = np.asarray(Y)
+
+    X_norm = np.linalg.norm(X, axis=1, keepdims=True)
+    Y_norm = np.linalg.norm(Y, axis=1, keepdims=True)
+
+    denom = X_norm * Y_norm.T
+    denom[denom == 0] = 1.0
+
+    return np.dot(X, Y.T) / denom
 
 
 def load_restaurants(path):

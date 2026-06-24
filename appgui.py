@@ -4,6 +4,7 @@ import prototype1_test
 import sys
 import os
 import numpy as np
+from sklearn.metrics.pairwise import cosine_similarity
 
 root = tk.Tk();
 root.title("Restaurant Recommender");
@@ -53,24 +54,27 @@ def recommend():
         restaurant_list = prototype1_test.restaurant_to_list(data);
         restaurant_embeddings = []
         restaurant_names = [];
-        inputEmbedding = [];
-        foundInput = False;
+        inputIndex = -1;
+        i = 0;
 
         restaurant_list = prototype1_test.restaurant_to_list(data)
         for restaurant in restaurant_list:
-
+            
             name = restaurant[0]
+            if name == inputText:
+                inputIndex = i;
             # Extract all embeddings (skipping the name and any None values)
             embeddings = [emb for emb in restaurant[1:] if emb is not None and isinstance(emb, np.ndarray)]
         
             if embeddings:
                 avg_emb = np.mean(embeddings, axis=0)
-                if name == inputText:
-                    inputEmbedding.append(avg_emb)
-                    foundInput = True;
-                else:
-                    restaurant_embeddings.append(avg_emb)
-                    restaurant_names.append(name)
+                restaurant_embeddings.append(avg_emb)
+                restaurant_names.append(name)
+            i += 1;
+        if inputIndex != -1:
+            if len(restaurant_embeddings) > 1:
+                sim_matrix = cosine_similarity(restaurant_embeddings)
+
 
         
         
