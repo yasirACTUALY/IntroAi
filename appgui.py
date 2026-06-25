@@ -43,6 +43,20 @@ dietary_entry.pack();
 confirmbutton = tk.Button(root, text="Get Recommendations", width=25);
 confirmbutton.pack(pady=10);
 
+restaurant1 = tk.Label(root, text="");
+restaurant1.pack(pady=5);
+
+restaurant2 = tk.Label(root, text="");
+restaurant2.pack(pady=5);
+
+restaurant3 = tk.Label(root, text="");
+restaurant3.pack(pady=5);
+
+restaurant4 = tk.Label(root, text="");
+restaurant4.pack(pady=5);
+
+restaurant5 = tk.Label(root, text="");
+restaurant5.pack(pady=5);
 
 
 test_data_path = 'testing_data_V1.0.json'
@@ -89,9 +103,19 @@ def recommend():
             inputIndex = restaurant_names.index(name)
             break
     else:
-        print("Input restaurant not found.")
+        restaurant1.config(text="Restaurant not found.");
+        restaurant2.config(text="");
+        restaurant3.config(text="");
+        restaurant4.config(text="");
+        restaurant5.config(text="");
         return
     similar_restaurants = evaluate.find_most_similar_restaurant(restaurant_names[inputIndex], restaurant_names, restaurant_embeddings)
+
+    restaurant1.config(text=similar_restaurants[1][0] if len(similar_restaurants) > 0 else "");
+    restaurant2.config(text=similar_restaurants[2][0] if len(similar_restaurants) > 1 else "");
+    restaurant3.config(text=similar_restaurants[3][0] if len(similar_restaurants) > 2 else "");
+    restaurant4.config(text=similar_restaurants[4][0] if len(similar_restaurants) > 3 else "");
+    restaurant5.config(text=similar_restaurants[5][0] if len(similar_restaurants) > 4 else "");
 
 
         
