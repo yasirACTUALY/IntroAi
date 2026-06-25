@@ -1,9 +1,11 @@
 import tkinter as tk
 from tkinter import ttk
 import prototype1_test
+import evaluate
 import sys
 import os
 import numpy as np
+import load_dataset
 from sklearn.metrics.pairwise import cosine_similarity
 
 root = tk.Tk();
@@ -41,39 +43,55 @@ dietary_entry.pack();
 confirmbutton = tk.Button(root, text="Get Recommendations", width=25);
 confirmbutton.pack(pady=10);
 
+
+
+test_data_path = 'testing_data_V1.0.json'
+
+if not os.path.exists(test_data_path):
+    print('Input file not found:', test_data_path, file=sys.stderr)
+    sys.exit(2)
+
+data = evaluate.load_restaurants(test_data_path)
+
+restaurant_list = []
+
+
+print("Generating embeddings for restaurant menus...")
+for restaurant in data:
+    restaurant_name = restaurant.get('restaurant_name') or restaurant.get('name') or 'Unnamed'
+
+    menu_items_dict = restaurant.get('menu', [])
+    menu_items = []
+    for item in menu_items_dict:
+        if item is None:
+            continue
+        # Process Item Name
+        item_name = item.get('item') if isinstance(item, dict) else str(item)
+        ingredients = load_dataset.get_ingredients_by_recipe_name(item_name)
+        menu_items.append([item_name, ingredients])
+   
+restaurant_value = evaluate.generate_restaurant_embedding(restaurant_name, menu_items)
+restaurant_list.append(restaurant_value)
+
+restaurant_embeddings = []
+restaurant_names = []
+
+for restaurant in restaurant_list:
+    restaurant_embeddings.append(restaurant[1])
+    restaurant_names.append(restaurant[0])
+
 def recommend():
-    inputText = recEntry.get();
-    recBy = combo_box.get();
-    test_data_path = 'testing_data_V1.0.json';
-    if(recBy == "Restaurant Name"):
-        test_data_path = 'testing_data_V1.0.json'
-        if not os.path.exists(test_data_path):
-            print('Input file not found:', test_data_path, file=sys.stderr)
-            sys.exit(2)
-        data = prototype1_test.load_data(test_data_path);
-        restaurant_list = prototype1_test.restaurant_to_list(data);
-        restaurant_embeddings = []
-        restaurant_names = [];
-        inputIndex = -1;
-        i = 0;
-
-        restaurant_list = prototype1_test.restaurant_to_list(data)
-        for restaurant in restaurant_list:
-            
-            name = restaurant[0]
-            if name == inputText:
-                inputIndex = i;
-            # Extract all embeddings (skipping the name and any None values)
-            embeddings = [emb for emb in restaurant[1:] if emb is not None and isinstance(emb, np.ndarray)]
-        
-            if embeddings:
-                avg_emb = np.mean(embeddings, axis=0)
-                restaurant_embeddings.append(avg_emb)
-                restaurant_names.append(name)
-            i += 1;
-        if inputIndex != -1:
-            if len(restaurant_embeddings) > 1:
-                sim_matrix = cosine_similarity(restaurant_embeddings)
+    print("Generating recommendations...")
+    inputRestaurant = recEntry.get();
+    inputIndex = -1;
+    for name in restaurant_names:
+        if name == inputRestaurant:
+            inputIndex = restaurant_names.index(name)
+            break
+    else:
+        print("Input restaurant not found.")
+        return
+    similar_restaurants = evaluate.find_most_similar_restaurant(restaurant_names[inputIndex], restaurant_names, restaurant_embeddings)
 
 
         
@@ -83,6 +101,5 @@ def recommend():
 
 
         
-
 
 root.mainloop();
