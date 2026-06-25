@@ -55,7 +55,7 @@ def generate_restaurant_embedding(restaurant_name, menu_items):
         else:
             print(f"Skipping menu item with no name: {item}")
 
-    print(f"Successfully processed {len(restaurant_embedding)} restaurants.")
+    print(f"Successfully processed {len(restaurant_embedding)} items.")
     return [restaurant_embedding[0], clear_embeddings(restaurant_embedding[1:])]
 
 def load_restaurants(path):

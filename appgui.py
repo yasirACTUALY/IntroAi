@@ -72,15 +72,19 @@ restaurant_list = []
 
 print("Generating embeddings for restaurant menus...")
 for restaurant in data:
+    print(f"Processing restaurant: {restaurant.get('restaurant_name') or restaurant.get('name') or 'Unnamed'}")
     restaurant_name = restaurant.get('restaurant_name') or restaurant.get('name') or 'Unnamed'
 
     menu_items_dict = restaurant.get('menu', [])
     menu_items = []
+    print(f"Processing {len(menu_items_dict)} items for {restaurant_name}")
     for item in menu_items_dict:
         if item is None:
+            print(f"Skipping None item in {restaurant_name}")
             continue
         # Process Item Name
         item_name = item.get('item') if isinstance(item, dict) else str(item)
+        print(f"Processing item: {item_name}")
         ingredients = load_dataset.get_ingredients_by_recipe_name(item_name)
         menu_items.append([item_name, ingredients])
    
@@ -92,6 +96,7 @@ restaurant_names = []
 
 for restaurant in restaurant_list:
     restaurant_embeddings.append(restaurant[1])
+    print(f"Added embedding for {restaurant[0]}")
     restaurant_names.append(restaurant[0])
 
 def recommend():

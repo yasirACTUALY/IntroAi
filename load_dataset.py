@@ -67,6 +67,7 @@ def get_row_by_index(index):
 def find_recipes_by_name( word):
     """Find all recipes that contain a word in their name."""
     if data is None:
+        print(f"Error: Data not loaded")
         return None
     if 'recipe_title' not in data.columns:
         print(f"Error: 'recipe_title' column not found")
@@ -91,7 +92,7 @@ def get_ingredients_by_recipe_name( word):
     if result.empty:
         print(f"Found 0 recipes containing '{word}'")
         return None
-    print(f"Found {len(result)} recipes containing '{word}'")
+   #print(f"Found {len(result)} recipes containing '{word}'")
     return result;
     for idx, row in result.iterrows():
         print(f"  - {row['ingredients_canonical']}")
