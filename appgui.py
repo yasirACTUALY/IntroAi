@@ -86,6 +86,7 @@ for restaurant in data:
         item_name = item.get('item') if isinstance(item, dict) else str(item)
         print(f"Processing item: {item_name}")
         ingredients = load_dataset.get_ingredients_by_recipe_name(item_name)
+        print(f"Found {len(ingredients)} ingredients for {item_name}")
         menu_items.append([item_name, ingredients])
    
 restaurant_value = evaluate.generate_restaurant_embedding(restaurant_name, menu_items)
