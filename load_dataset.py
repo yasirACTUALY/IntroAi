@@ -92,10 +92,11 @@ def get_ingredients_by_recipe_name( word):
     if result.empty:
         print(f"Found 0 recipes containing '{word}'")
         return None
-   #print(f"Found {len(result)} recipes containing '{word}'")
-    return result;
-    for idx, row in result.iterrows():
-        print(f"  - {row['ingredients_canonical']}")
+    print(f"Found {len(result)} recipes containing '{word}'")
+    if 'ingredients_canonical' not in result.columns:
+        print("Error: 'ingredients_canonical' column not found")
+        return None
+    return result.iloc[0]['ingredients_canonical']
 
 data = load_dataset('dataset/recipes_extended.json')
 # Example usage
@@ -106,6 +107,6 @@ if __name__ == "__main__":
         # print(f"\nDataset Info:")
         # print(dataset.info())
         # Example usage:
-        print(find_recipes_by_name(dataset, 'Hamburger'))
+        print(get_ingredients_by_recipe_name('Hamburger'))
         # print(get_column_data(dataset, 'recipe_title').head())
         # print(get_row_by_index(dataset, 0))
